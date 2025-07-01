@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Bin2Dec Converter</h1>
+
+    {{ form(form) }}
+
+    {% if decimal is defined %}
+        <div class="result">
+            Decimal: {{ decimal }}
+        </div>
+    {% endif %}
+
+{% endblock %}
